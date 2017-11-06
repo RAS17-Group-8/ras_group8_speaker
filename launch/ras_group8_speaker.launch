@@ -1,0 +1,8 @@
+<launch>
+
+  <!-- Launch RAS Group 8 Speaker Node -->
+  <node pkg="ras_group8_speaker" type="ras_group8_speaker" name="ras_group8_speaker" output="screen">
+    <rosparam command="load" file="$(find ras_group8_speaker)/config/default.yaml" />
+  </node>
+
+</launch>

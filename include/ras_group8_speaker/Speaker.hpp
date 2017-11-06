@@ -1,19 +1,18 @@
 #pragma once
 
 #include <ros/ros.h>
-#include <phidgets/motor_encoder.h>
 
-namespace ras_group8_template {
+namespace ras_group8_speaker {
 
-class Template
+class Speaker
 {
 public:
-  Template(ros::NodeHandle& node_handle);
-  virtual ~Template();
+  Speaker(ros::NodeHandle& node_handle);
+  virtual ~Speaker();
 
 private:
   bool readParameters();
-  void topicCallback(const phidgets::motor_encoder& msg);
+  //void topicCallback(const phidgets::motor_encoder& msg);
 
   /* ROS Objects
    */
